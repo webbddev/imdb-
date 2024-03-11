@@ -17,10 +17,10 @@ export default function Card({ result }) {
         />
       </Link>
       <div className='p-2'>
-        <h3 className='text-ld font-bold truncate'>
+        <h3 className='text-ld font-bold truncate dark:text-slate-200'>
           {result.title || result.original_name}
         </h3>
-        <p className='line-clamp-2 text-sm md:text-md mb-2'>
+        <p className='line-clamp-2 text-sm md:text-md mb-2 dark:text-slate-100'>
           {result.overview}
         </p>
         <p className='text-sm flex items-center'>

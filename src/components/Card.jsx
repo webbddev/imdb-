@@ -23,9 +23,9 @@ export default function Card({ result }) {
         <p className='line-clamp-2 text-sm md:text-md mb-2 dark:text-slate-100'>
           {result.overview}
         </p>
-        <p className='text-sm flex items-center'>
+        <p className='text-sm flex justify-between items-center'>
           Released: {result.release_date || result.first_air_date}
-          <div className='flex text-amber-600 dark:text-amber-400'>
+          <div className='flex text-amber-600 dark:text-amber-400 mr-2'>
             <FiThumbsUp className='h-5 mr-1 ml-3 ' />
             {result.vote_count}
           </div>

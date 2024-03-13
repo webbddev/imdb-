@@ -1,6 +1,7 @@
 import { Inter } from 'next/font/google';
 import './globals.css';
 import Providers from '@/Providers';
+import { Suspense } from 'react';
 // components
 import Header from '@/components/Header';
 import Navbar from '@/components/Navbar';
@@ -16,7 +17,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang='en'>
-      <body className={inter.className}>
+      <body className={inter.className} suppressHydrationWarning={false}>
         <Providers>
           <Header />
           <Navbar />
